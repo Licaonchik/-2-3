@@ -1,11 +1,15 @@
-﻿Console.WriteLine("Введите конечное число");
-int x = Convert.ToInt32(Console.ReadLine());
-double z = 0;
-for (int i = 0; i <= x; i++)
+﻿Console.WriteLine("Введите длину а");
+double a = Convert.ToDouble(Console.ReadLine());
+Console.WriteLine("Введите длину b");
+double b = Convert.ToDouble(Console.ReadLine());
+Console.WriteLine("Введите длину c");
+double c = Convert.ToDouble(Console.ReadLine());
+if (a == b && b == c)
 {
-    z = +z + Math.Pow(-1, i) * i;
-    Console.WriteLine(z);
+    Console.WriteLine("Треугольник равнобедренный");
 }
-
-    
+else
+{
+    Console.WriteLine("треугольник не равнобедренный");
+}
 
